@@ -30,7 +30,7 @@ const App = ({ anecdotes }) => {
 
   return (
     <div>
-      <h1>Anecdote of the day</h1>
+      <h1 className="p-2">Anecdote of the day</h1>
       <Anecdote anecdote={anecdotes[selected]} votes={votes[selected]} />
       <button className="btn btn-light m-2" onClick={handleOnclickVotes}>
         Vote
@@ -38,7 +38,7 @@ const App = ({ anecdotes }) => {
       <button className="btn btn-dark m-2" onClick={handleOnclickAnecdote}>
         Next anecdote
       </button>
-      <h1>Anecdote with most votes</h1>
+      <h1 className="p-2">Anecdote with most votes</h1>
       <Anecdote anecdote={anecdotes[maxVotes]} votes={votes[maxVotes]} />
     </div>
   );
